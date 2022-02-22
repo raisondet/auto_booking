@@ -51,8 +51,9 @@ else:
   else:
     driver_path = "/Users/c._.hwan/Documents/chromedriver"
   
-  s= Service(driver_path)
-  browser = webdriver.Chrome(service=s)
+  #s= Service(driver_path)
+  #browser = webdriver.Chrome(service=s)
+  browser = webdriver.Chrome(driver_path)
 browser.implicitly_wait(10) # 페이지가 로딩될때까지 최대 10초 기다려줌
 #browser.maximize_window() # 화면 최대화
 browser.get(url)
